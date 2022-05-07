@@ -78,6 +78,8 @@ nav {
   text-transform: uppercase;
   transition: background-color 0.6s;
   z-index: 2;
+  overflow: hidden;
+  
 
   a,
   i {
@@ -87,10 +89,13 @@ nav {
   a:hover {
     color: $main-color;
   }
-
+ button {
+   overflow: hidden;
+ }
   .fa-bars {
     padding: 10px;
     color: $main-color;
+    overflow: hidden;
   }
 
   .navbar-brand {
@@ -131,6 +136,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     z-index: 0;
+    overflow: hidden;
   }
 
   .hero-shadow {
@@ -139,6 +145,7 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: -10;
+    overflow: hidden;
   }
 
   .hero-text {
@@ -198,7 +205,7 @@ header {
     height: 450px;
     border-top: solid 8px $main-color;
     border-right: solid 8px $main-color;
-    transition: border .5s;
+    transition: border 0.5s;
   }
   .img-three {
     background-image: url("/img/jaiobraz.JPG");
@@ -417,7 +424,6 @@ header {
   margin: 20px;
   padding: 5px;
   span {
-   
     font-weight: 600;
     color: #ca6200;
   }
@@ -428,11 +434,11 @@ header {
   }
   .price-text {
     font-weight: 600;
-    color: rgb(218, 64, 64);
+    color: #ca6200;
   }
-  .price-bold{
+  .price-bold {
     font-size: 20px;
-    color: rgb(218, 64, 64);
+    color: #ca6200;
   }
 }
 
